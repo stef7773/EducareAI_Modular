@@ -186,7 +186,7 @@ def main():
         return
 
     # ── Configuración ──
-    MAX_KW_POR_IDIOMA = 2300   # Páginas por idioma
+    MAX_KW_POR_IDIOMA = 250    # Páginas por idioma (antes 2300 — reducido para evitar thin content)
     MAX_WORKERS       = 10    # Hilos paralelos
     USE_AI            = False  # Desactivado — usamos generador estático
 
