@@ -151,6 +151,7 @@ def generar_frontend_impactante(base_dir):
     <title>{t["title"]}</title>
     <meta name="description" content="{t["description"]}">
     <link rel="canonical" href="{can}">
+    <link rel="icon" type="image/png" href="{OG_IMAGE}">
     <meta property="og:title" content="{t["title"]}">
     <meta property="og:description" content="{t["description"]}">
     <meta property="og:image" content="{OG_IMAGE}">
