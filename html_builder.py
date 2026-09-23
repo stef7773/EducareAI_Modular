@@ -457,7 +457,7 @@ def generar_html_seo(tema, lang, idx, depth=1, contenido_dinamico=None):
     <meta name="twitter:image" content="/static/images/logo-nuevo.png">
     
     <title>{tema} | Educare AI</title>
-    <link rel="icon" type="image/png" href="/static/images/logo-nuevo.png">
+    <link rel="icon" type="image/png" href="https://stef7773.github.io/EducareAI_Modular/static/images/logo-nuevo.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     {css_futurista}
 </head>
