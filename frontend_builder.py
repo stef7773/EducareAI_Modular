@@ -5,7 +5,8 @@ def generar_frontend_impactante(base_dir):
     with open('config/frontend_texts.json', 'r') as f:
         textos = json.load(f)
     
-    logo_url = "./static/images/logo-nuevo.png"
+    # URL absoluta requerida para og:image y favicons
+    logo_url = "https://stef7773.github.io/EducareAI_Modular/static/images/logo-nuevo.png"
     idiomas_badge = "Español • English • Français • Deutsch • Italiano • Português • 日本語 • 한국어 • 中文 • Русский • العربية • हिन्दी • Nederlands • Polski • Türkçe • Svenska • Tiếng Việt • Українська • Български • Slovenčina • Slovenščina • Hrvatski • Lietuvių • Latviešu • Eesti • Indonesia • עברית • Azərbaycanca • Беларуская • Galego • Hausa • Հայերեն • فارسی"
     
     # URL del Worker de Cloudflare

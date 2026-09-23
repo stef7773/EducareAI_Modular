@@ -446,7 +446,7 @@ def generar_html_seo(tema, lang, idx, depth=1, contenido_dinamico=None):
     
     <meta property="og:title" content="{tema} | Educare AI">
     <meta property="og:description" content="{desc[:200]}">
-    <meta property="og:image" content="/static/images/logo-nuevo.png">
+    <meta property="og:image" content="https://stef7773.github.io/EducareAI_Modular/static/images/logo-nuevo.png">
     <meta property="og:url" content="https://stef7773.github.io/EducareAI_Modular/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Educare AI">
@@ -454,7 +454,7 @@ def generar_html_seo(tema, lang, idx, depth=1, contenido_dinamico=None):
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{tema} | Educare AI">
     <meta name="twitter:description" content="{desc[:200]}">
-    <meta name="twitter:image" content="/static/images/logo-nuevo.png">
+    <meta name="twitter:image" content="https://stef7773.github.io/EducareAI_Modular/static/images/logo-nuevo.png">
     
     <title>{tema} | Educare AI</title>
     <link rel="icon" type="image/png" sizes="32x32" href="https://stef7773.github.io/EducareAI_Modular/static/images/logo-nuevo.png">
