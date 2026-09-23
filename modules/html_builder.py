@@ -67,6 +67,7 @@ def generar_html_seo(tema, lang, idx, depth=1, contenido_dinamico=None, categori
 <meta name="description" content="{desc[:200]}">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="{canonical}">
+<link rel="icon" type="image/png" href="{OG_IMAGE}">
 <meta property="og:title" content="{tema} | Educare AI">
 <meta property="og:description" content="{desc[:200]}">
 <meta property="og:image" content="{OG_IMAGE}">
