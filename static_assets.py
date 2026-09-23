@@ -319,8 +319,9 @@ document.addEventListener('DOMContentLoaded',function(){
 """
 
 def crear_assets_estaticos(base_dir):
-    """Crea los archivos CSS y JS compartidos en docs/static/"""
+    """Crea los archivos CSS y JS compartidos en docs/static/, y copia las imágenes."""
     import os
+    import shutil
     static_dir = os.path.join(base_dir, 'static')
     os.makedirs(static_dir, exist_ok=True)
 
@@ -334,4 +335,18 @@ def crear_assets_estaticos(base_dir):
 
     print(f"   ✅ CSS: {css_path} ({len(SHARED_CSS.encode())//1024}KB)")
     print(f"   ✅ JS:  {js_path} ({len(SHARED_JS.encode())//1024}KB)")
+
+    # Copia la carpeta de imágenes fuente (static/images/ en la raíz del
+    # repo) hacia docs/static/images/, que es la carpeta que realmente
+    # publica GitHub Pages. Sin esto, cualquier imagen referenciada en el
+    # HTML (favicon, og:image, etc.) da 404 en el sitio en vivo, aunque el
+    # archivo exista en el repo — porque nunca llega a docs/.
+    origen_imagenes = os.path.join(os.getcwd(), 'static', 'images')
+    destino_imagenes = os.path.join(static_dir, 'images')
+    if os.path.exists(origen_imagenes):
+        shutil.copytree(origen_imagenes, destino_imagenes, dirs_exist_ok=True)
+        print(f"   ✅ Imágenes copiadas: {origen_imagenes} → {destino_imagenes}")
+    else:
+        print(f"   ⚠ No se encontró la carpeta de imágenes en {origen_imagenes}")
+
     return css_path, js_path
