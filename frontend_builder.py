@@ -137,6 +137,7 @@ def generar_frontend_impactante(base_dir):
     <meta property="og:description" content="{t["description"]}">
     <meta property="og:image" content="{logo_url}">
     <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="{logo_url}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
